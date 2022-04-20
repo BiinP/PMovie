@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+</body>
+<script>
+	var xhttp = new XMLHttpRequest();
+	xhttp.open("GET", "/P-Movie.com/data", true);
+	xhttp.send();
+	xhttp.onreadystatechange = function() {
+		if (this.readyState == 4 && this.status == 200) {
+			render(JSON.parse(this.responseText));
+		}
+		function render(lessons){
+			for(var lesson of lessons){
+				console.log(lesson)
+			}
+		}
+	};
+</script>
+</html>

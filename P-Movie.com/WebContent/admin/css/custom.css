@@ -1,0 +1,6 @@
+.avatar-user {
+  object-fit: cover;
+  width: 100%;
+  height: 425px;
+  border-radius: 10px;
+}
